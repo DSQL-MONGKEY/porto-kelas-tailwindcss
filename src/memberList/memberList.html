@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./memberListStyle.css">
+    <title>1DC02</title>
+</head>
+<body>
+
+    <nav class="nsvbar bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+        <div class="container flex flex-wrap justify-between items-center mx-auto">
+
+            <!-- Humburger Button -->
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+            </button>
+
+            <!-- Navigation Page -->
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="../../index.html" class="block py-2 pr-4 pl-3  text-gray-700 rounded hover:bg-gray-200 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent font-semibold text-xl btn btn-ghost " aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="./memberList.html" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-200 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent font-semibold text-xl btn btn-ghost">Member</a>
+                    </li>
+                    <li>
+                        <a href="../about/about.html" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-200 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent font-semibold text-xl btn btn-ghost">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="heading-members my-10">
+        <div class="text-center">
+            <h1 class="text-5xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-rose-500">
+                Nice to meet you
+            </h1>
+        </div>
+    </div>
+    <div class="container mx-auto my-10 p-5 flex justify-center">
+        <div class="members-list grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-12">
+            
+            <div id="card-edi" class="flex flex-col shadow-xl rounded-lg p-5 hover:-translate-y-5 duration-300 h-72">
+                <label for="modal-edi" class="modal-button">
+                    <img src="../../img/edi.png" alt="Edi" width="180" height="180" class="mt-10 rounded-full">
+                    <div class="content-members text-center font-semibold text-xl">
+                        <p id="name-edi">Edi .D</p>
+                    </div>
+                </label>
+            </div>
+
+            <div id="card-dimas" class="flex flex-col shadow-xl rounded-lg p-5 hover:-translate-y-5 duration-300 h-72">
+                <img src="../../img/dimas.png" alt="Edi" width="180" height="80" class="justify-center rounded-full">
+                
+                <div class="content-members text-center font-semibold text-xl">
+                    <p>Dimas Prasetyo</p>
+                </div>
+            </div>
+
+            <div id="card-raka" class="flex flex-col shadow-xl rounded-lg p-5 hover:-translate-y-5 duration-300 h-72">
+                <img src="../../img/raka.png" alt="Edi" width="180" height="80" class="justify-center rounded-full mb-1">
+                
+                <div class="content-members text-center font-semibold text-xl">
+                    <p>Raka Adi .W</p>
+                </div>
+            </div>
+
+            <div id="card-rama" class="flex flex-col shadow-xl rounded-lg p-5 hover:-translate-y-5 duration-300 h-72">
+                <img src="../../img/rama.png" alt="Edi" width="180" height="180" class="justify-center scale-150 mt-14 mb-3 rounded-full">
+                
+                <div class="content-members text-center font-semibold text-xl relative text-ceter translate-y-full">
+                    <p>Rama Idsan</p>
+                </div>
+            </div>
+            
+            <div id="card-burhan" class="flex flex-col shadow-xl rounded-lg p-5  hover:-translate-y-5 duration-300 h-72">
+                <img src="../../img/burhan.png" alt="Edi" width="156" height="100" class="mx-auto rounded-full">
+                
+                <div class="content-members text-center font-semibold text-xl">
+                    <p id="p-edi">Burhan Adji .Z</p>
+                </div>
+            </div>
+
+            <div id="card-yusuf" class="flex flex-col shadow-xl rounded-lg p-5  hover:-translate-y-5 duration-300 h-72">
+                <img src="../../img/yusuf.png" alt="Edi" width="136" height="300" class="mx-auto rounded-full">
+                
+                <div class="content-members text-center font-semibold text-xl">
+                    <p id="p-edi">Yusuf</p>
+                </div>
+            </div>
+
+            <div id="card-dinda" class="flex flex-col shadow-xl rounded-lg p-5  hover:-translate-y-5 duration-300 h-72">
+                <img src="../../img/dinda.png" alt="Edi" width="170" height="100" class="mx-auto rounded-full mt-7">
+                
+                <div class="content-members text-center font-semibold text-xl translate-y-2">
+                    <p id="p-edi">Dinda Garlita</p>
+                </div>
+            </div>
+
+            <div id="card-mutmainah" class="flex flex-col shadow-xl rounded-lg p-5  hover:-translate-y-5 duration-300 h-72">
+                <img src="../../img/mutmainah.png" alt="Edi" width="137" height="100" class="mx-auto rounded-full">
+                
+                <div class="content-members text-center font-semibold text-xl">
+                    <p id="p-edi">Mutmainah</p>
+                </div>
+            </div>
+            <div id="card-niken" class="flex flex-col shadow-xl rounded-lg p-5  hover:-translate-y-5 duration-300 h-72">
+                <img src="../../img/niken.png" alt="Edi" width="139" height="200" class="mx-auto rounded-full">
+                
+                <div class="content-members text-center font-semibold text-xl">
+                    <p id="p-edi">Niken</p>
+                </div>
+            </div>
+
+
+        <!-- Put this part before </body> tag -->
+        
+        <div class="modal">
+            <div class="modal-box relative">
+                <label for="modal-edi" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                <h3 class="text-lg font-bold">
+                    Hello there, my name is Edi Dharmawan!
+                </h3>
+                <p class="py-4">
+                    I'm from Indramayu, that's part of west java tho...hehe,<br>
+                    and i'm studying at Gunadarma University now
+                </p>
+                <p class="py-2">
+                    Click link below, to get more info about me <br>
+                    <a href=""> Here!</a>
+                </p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <input type="checkbox" id="modal-edi" class="modal-toggle" />
+    <input type="checkbox" id="modal-dimas" class="modal-toggle" />
+    <input type="checkbox" id="modal-raka" class="modal-toggle" />
+    <input type="checkbox" id="modal-rama" class="modal-toggle" />
+    <input type="checkbox" id="modal-burhan" class="modal-toggle" />
+    <input type="checkbox" id="modal-yusuf" class="modal-toggle" />
+    <input type="checkbox" id="modal-dinda" class="modal-toggle" />
+    <input type="checkbox" id="modal-mutmainah" class="modal-toggle" />
+    <input type="checkbox" id="modal-niken" class="modal-toggle" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <script src="./memberList.js"></script>
+</body>
+</html>
