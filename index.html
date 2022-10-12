@@ -38,11 +38,20 @@
     </nav>
 
     <div class="container mx-auto">
+
+        <div id="clock" class="flex justify-center select-none">
+            <div id="clock-container" class="grid grid-cols-3 font-semibold text-xl translate-y-1\/4 bg-blue-300 w-52 p-3 text-center">
+                <p id="jam"></p>
+                <p id="menit"></p>
+                <p id="detik"></p>
+            </div>
+        </div>
+
         <div class="Welcome flex flex-col text-center translate-y-32">
             <h1 class="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 animate-pulse">
                 Welcome to 1DC02
             </h1>
-            <h2 class="font-semibold1">Landing Page</h2>
+            <h2 class="font-semibold">Landing Page</h2>
 
             <button id="see-members-button" class="bg-blue-500 mx-auto p-2 translate-y-24 rounded active:bg-gray-700 scale: hover:scale-150 duration-300 hover:bg-gradient-to-r from-blue-500 via-rose-500 to-pink-500">
                 <a href="./src/memberList/memberList.html" class="font-semibold text-white text-xl">
@@ -51,6 +60,17 @@
             </button>
         </div>
     </div>
+
+    <script>
+        window.setTimeout("time()", 1000)
+        function time() {
+            let times = new Date()
+            setTimeout("time()", 1000)
+            document.getElementById('jam').innerHTML = times.getHours()
+            document.getElementById('menit').innerHTML = times.getMinutes()
+            document.getElementById('detik').innerHTML = times.getSeconds()
+        }
+    </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>

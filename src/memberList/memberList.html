@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <nav class="nsvbar bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+    <nav class="nsvbar bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 ">
         <div class="container flex flex-wrap justify-between items-center mx-auto">
 
             <!-- Humburger Button -->
@@ -44,112 +44,249 @@
             </h1>
         </div>
     </div>
-    <div class="container mx-auto my-10 p-5 flex justify-center">
-        <div class="members-list grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-12">
-            
+
+    <div id="container-member" class="container mx-auto my-10 p-5 flex justify-center">
+        <div id="member-list" class="members-list grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-12">
+
             <div id="card-edi" class="flex flex-col shadow-xl rounded-lg p-5 hover:-translate-y-5 duration-300 h-72">
-                <label for="modal-edi" class="modal-button">
+                <label for="modal-edi">
                     <img src="../../img/edi.png" alt="Edi" width="180" height="180" class="mt-10 rounded-full">
                     <div class="content-members text-center font-semibold text-xl">
-                        <p id="name-edi">Edi .D</p>
+                        <p id="p-edi">Edi .D</p>
                     </div>
                 </label>
             </div>
 
             <div id="card-dimas" class="flex flex-col shadow-xl rounded-lg p-5 hover:-translate-y-5 duration-300 h-72">
-                <img src="../../img/dimas.png" alt="Edi" width="180" height="80" class="justify-center rounded-full">
-                
-                <div class="content-members text-center font-semibold text-xl">
-                    <p>Dimas Prasetyo</p>
-                </div>
+                <label for="modal-dimas">
+                    <img src="../../img/dimas.png" alt="Edi" width="180" height="80" class="justify-center rounded-full">
+                    <div class="content-members text-center font-semibold text-xl">
+                        <p id="p-dimas">Dimas .P</p>
+                    </div>
+                </label>
             </div>
 
             <div id="card-raka" class="flex flex-col shadow-xl rounded-lg p-5 hover:-translate-y-5 duration-300 h-72">
-                <img src="../../img/raka.png" alt="Edi" width="180" height="80" class="justify-center rounded-full mb-1">
-                
-                <div class="content-members text-center font-semibold text-xl">
-                    <p>Raka Adi .W</p>
-                </div>
+                <label for="modal-raka">
+                    <img src="../../img/raka.png" alt="Edi" width="180" height="80" class="justify-center rounded-full mb-1">
+                    <div class="content-members text-center font-semibold text-xl">
+                        <p id="p-raka">Raka Adi .W</p>
+                    </div>
+                </label>
             </div>
 
             <div id="card-rama" class="flex flex-col shadow-xl rounded-lg p-5 hover:-translate-y-5 duration-300 h-72">
-                <img src="../../img/rama.png" alt="Edi" width="180" height="180" class="justify-center scale-150 mt-14 mb-3 rounded-full">
-                
-                <div class="content-members text-center font-semibold text-xl relative text-ceter translate-y-full">
-                    <p>Rama Idsan</p>
-                </div>
+                <label for="modal-rama">
+                    <img src="../../img/rama.png" alt="Edi" width="180" height="180" class="justify-center scale-150 mt-14 mb-3 rounded-full">
+                    <div class="content-members text-center font-semibold text-xl relative text-ceter translate-y-full">
+                        <p id="p-rama">Rama Idsan</p>
+                    </div>
+                </label>
             </div>
             
             <div id="card-burhan" class="flex flex-col shadow-xl rounded-lg p-5  hover:-translate-y-5 duration-300 h-72">
-                <img src="../../img/burhan.png" alt="Edi" width="156" height="100" class="mx-auto rounded-full">
-                
-                <div class="content-members text-center font-semibold text-xl">
-                    <p id="p-edi">Burhan Adji .Z</p>
-                </div>
+                <label for="modal-burhan">
+                    <img src="../../img/burhan.png" alt="Edi" width="156" height="100" class="mx-auto rounded-full">
+                    <div class="content-members text-center font-semibold text-xl">
+                        <p id="p-burhan">Burhan Adji .Z</p>
+                    </div>
+                </label>
             </div>
 
             <div id="card-yusuf" class="flex flex-col shadow-xl rounded-lg p-5  hover:-translate-y-5 duration-300 h-72">
-                <img src="../../img/yusuf.png" alt="Edi" width="136" height="300" class="mx-auto rounded-full">
-                
-                <div class="content-members text-center font-semibold text-xl">
-                    <p id="p-edi">Yusuf</p>
-                </div>
+                <label for="modal-yusuf">
+                    <img src="../../img/yusuf.png" alt="Edi" width="136" height="300" class="mx-auto rounded-full">
+                    <div class="content-members text-center font-semibold text-xl">
+                        <p id="p-yusuf">Yusuf</p>
+                    </div>
+                </label>
             </div>
 
-            <div id="card-dinda" class="flex flex-col shadow-xl rounded-lg p-5  hover:-translate-y-5 duration-300 h-72">
-                <img src="../../img/dinda.png" alt="Edi" width="170" height="100" class="mx-auto rounded-full mt-7">
-                
-                <div class="content-members text-center font-semibold text-xl translate-y-2">
-                    <p id="p-edi">Dinda Garlita</p>
-                </div>
+            <div id="card-dinda" class="flex flex-col shadow-xl rounded-lg p-5  hover:-translate-y-6 duration-300 h-72">
+                <label for="modal-dinda">
+                    <img src="../../img/dinda.png" alt="Edi" width="170" height="100" class="mx-auto rounded-full mt-7">
+                    <div class="content-members text-center font-semibold text-xl translate-y-2">
+                        <p id="p-dinda">Dinda Garlita</p>
+                    </div>
+                </label>
             </div>
 
             <div id="card-mutmainah" class="flex flex-col shadow-xl rounded-lg p-5  hover:-translate-y-5 duration-300 h-72">
-                <img src="../../img/mutmainah.png" alt="Edi" width="137" height="100" class="mx-auto rounded-full">
-                
-                <div class="content-members text-center font-semibold text-xl">
-                    <p id="p-edi">Mutmainah</p>
-                </div>
+                <label for="modal-mutmainah">
+                    <img src="../../img/mutmainah.png" alt="Edi" width="137" height="100" class="mx-auto rounded-full">
+                    <div class="content-members text-center font-semibold text-xl">
+                        <p id="p-mutmainah">Mutmainah</p>
+                    </div>
+                </label>
             </div>
+
             <div id="card-niken" class="flex flex-col shadow-xl rounded-lg p-5  hover:-translate-y-5 duration-300 h-72">
-                <img src="../../img/niken.png" alt="Edi" width="139" height="200" class="mx-auto rounded-full">
-                
-                <div class="content-members text-center font-semibold text-xl">
-                    <p id="p-edi">Niken</p>
+                <label for="modal-niken">
+                    <img src="../../img/niken.png" alt="Edi" width="139" height="200" class="mx-auto rounded-full">
+                    <div class="content-members text-center font-semibold text-xl">
+                        <p id="p-niken">Niken</p>
+                    </div>
+                </label>
+            </div>
+
+            <div id="card-arrashi" class="flex flex-col shadow-xl rounded-lg p-5  hover:-translate-y-5 duration-300 h-72">
+                <label for="modal-arrashi">
+                    <img src="../../img/arrashi.png" alt="Edi" width="180" height="200" class="mx-auto mt-6 rounded-full">
+                    <div class="content-members text-center font-semibold text-xl">
+                        <p id="p-niken">Arrashi .S</p>
+                    </div>
+                </label>
+            </div>
+
+            <div id="card-fira" class="flex flex-col shadow-xl rounded-lg p-5  hover:-translate-y-5 duration-300 h-72">
+                <label for="modal-fira">
+                    <img src="../../img/fira.png" alt="fira" width="180" height="200" class="mx-auto mt-6 rounded-full">
+                    <div class="content-members text-center font-semibold text-xl">
+                        <p id="p-niken">Safira .M</p>
+                    </div>
+                </label>
+            </div>
+            <div id="card-fata" class="flex flex-col shadow-xl rounded-lg p-5  hover:-translate-y-5 duration-300 h-72">
+                <label for="modal-fata">
+                    <img src="../../img/fata.png" alt="fira" width="180" height="200" class="mx-auto mt-6 rounded-full">
+                    <div class="content-members text-center font-semibold text-xl">
+                        <p id="p-niken">Fata Alhaq</p>
+                    </div>
+                </label>
+            </div>
+            <div id="card-syukri" class="flex flex-col shadow-xl rounded-lg p-5  hover:-translate-y-5 duration-300 h-72">
+                <label for="modal-syukri">
+                    <img src="../../img/syukri.png" alt="fira" width="180" height="200" class="mx-auto mt-6 rounded-full">
+                    <div class="content-members text-center font-semibold text-xl">
+                        <p id="p-niken">M. Syukri .R </p>
+                    </div>
+                </label>
+            </div>
+
+            
+
+            
+
+        <!-- Modal for member list -->
+            <input type="checkbox" id="modal-edi" class="modal-toggle" />
+            <div class="modal">
+                <div class="modal-box relative bg-gradient-to-b from-fuchsia-500 to-pink-400">
+                    <label for="modal-edi" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                    <h3 class="text-lg font-bold">Congratulations random Internet user!</h3>
+                    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
                 </div>
             </div>
 
-
-        <!-- Put this part before </body> tag -->
-        
-        <div class="modal">
-            <div class="modal-box relative">
-                <label for="modal-edi" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-                <h3 class="text-lg font-bold">
-                    Hello there, my name is Edi Dharmawan!
-                </h3>
-                <p class="py-4">
-                    I'm from Indramayu, that's part of west java tho...hehe,<br>
-                    and i'm studying at Gunadarma University now
-                </p>
-                <p class="py-2">
-                    Click link below, to get more info about me <br>
-                    <a href=""> Here!</a>
-                </p>
+            <input type="checkbox" id="modal-dimas" class="modal-toggle" />
+            <div class="modal">
+                <div class="modal-box relative bg-gradient-to-b from-fuchsia-600 to-pink-400">
+                    <label for="modal-dimas" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                    <h3 class="text-lg font-bold">Congratulations random Internet user!</h3>
+                    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+                </div>
             </div>
-        </div>
+            
+            <input type="checkbox" id="modal-raka" class="modal-toggle" />
+            <div class="modal">
+                <div class="modal-box relative bg-gradient-to-b from-fuchsia-600 to-pink-400">
+                    <label for="modal-raka" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                    <h3 class="text-lg font-bold">Congratulations random Internet user!</h3>
+                    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+                </div>
+            </div>
+            
+            <input type="checkbox" id="modal-rama" class="modal-toggle" />
+            <div class="modal">
+                <div class="modal-box relative bg-gradient-to-b from-fuchsia-600 to-pink-400">
+                    <label for="modal-rama" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                    <h3 class="text-lg font-bold">hello</h3>
+                    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+                </div>
+            </div>
+            
+            <input type="checkbox" id="modal-burhan" class="modal-toggle" />
+            <div class="modal">
+                <div class="modal-box relative bg-gradient-to-b from-fuchsia-600 to-pink-400">
+                    <label for="modal-burhan" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                    <h3 class="text-lg font-bold">Congratulations random Internet user!</h3>
+                    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+                </div>
+            </div>
+
+            <input type="checkbox" id="modal-yusuf" class="modal-toggle" />
+            <div class="modal">
+                <div class="modal-box relative bg-gradient-to-b from-fuchsia-600 to-pink-400">
+                    <label for="modal-yusuf" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                    <h3 class="text-lg font-bold">Congratulations random Internet user!</h3>
+                    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+                </div>
+            </div>
+
+            <input type="checkbox" id="modal-dinda" class="modal-toggle" />
+            <div class="modal">
+                <div class="modal-box relative bg-gradient-to-b from-pink-400 to-rose-500">
+                    <label for="modal-dinda" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                    <h3 class="text-lg font-bold">Congratulations random Internet user!</h3>
+                    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+                </div>
+            </div>
+
+            <input type="checkbox" id="modal-mutmainah" class="modal-toggle" />
+            <div class="modal">
+                <div class="modal-box relative bg-gradient-to-b from-pink-400 to-rose-500">
+                    <label for="modal-mutmainah" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                    <h3 class="text-lg font-bold">Congratulations random Internet user!</h3>
+                    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+                </div>
+            </div>
+
+            <input type="checkbox" id="modal-niken" class="modal-toggle" />
+            <div class="modal">
+                <div class="modal-box relative bg-gradient-to-b from-pink-400 to-rose-500">
+                    <label for="modal-niken" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                    <h3 class="text-lg font-bold">Congratulations random Internet user!</h3>
+                    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+                </div>
+            </div>
+
+            <input type="checkbox" id="modal-arrashi" class="modal-toggle" />
+            <div class="modal">
+                <div class="modal-box relative bg-gradient-to-b from-sky-700 to-blue-300">
+                    <label for="modal-arrashi" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                    <h3 class="text-lg font-bold">Congratulations random Internet user!</h3>
+                    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+                </div>
+            </div>
+
+            <input type="checkbox" id="modal-fira" class="modal-toggle" />
+            <div class="modal">
+                <div class="modal-box relative bg-gradient-to-b from-pink-400 to-rose-500">
+                    <label for="modal-fira" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                    <h3 class="text-lg font-bold">Congratulations random Internet user!</h3>
+                    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+                </div>
+            </div>
+            
+            <input type="checkbox" id="modal-fata" class="modal-toggle" />
+            <div class="modal">
+                <div class="modal-box relative bg-gradient-to-b from-teal-700 to-cyan-300">
+                    <label for="modal-fata" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                    <h3 class="text-lg font-bold">Congratulations random Internet user!</h3>
+                    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+                </div>
+            </div>
+            
+            <input type="checkbox" id="modal-syukri" class="modal-toggle" />
+            <div class="modal">
+                <div class="modal-box relative bg-gradient-to-b from-pink-400 to-violet-500">
+                    <label for="modal-syukri" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                    <h3 class="text-lg font-bold">Congratulations random Internet user!</h3>
+                    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <input type="checkbox" id="modal-edi" class="modal-toggle" />
-    <input type="checkbox" id="modal-dimas" class="modal-toggle" />
-    <input type="checkbox" id="modal-raka" class="modal-toggle" />
-    <input type="checkbox" id="modal-rama" class="modal-toggle" />
-    <input type="checkbox" id="modal-burhan" class="modal-toggle" />
-    <input type="checkbox" id="modal-yusuf" class="modal-toggle" />
-    <input type="checkbox" id="modal-dinda" class="modal-toggle" />
-    <input type="checkbox" id="modal-mutmainah" class="modal-toggle" />
-    <input type="checkbox" id="modal-niken" class="modal-toggle" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
     <script src="./memberList.js"></script>
