@@ -7,3 +7,4 @@ let card_dimas = document.getElementById('card-dimas')
 card_dimas.addEventListener('click', () => {
     console.log('hello')
 })
+
